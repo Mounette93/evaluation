@@ -17,23 +17,96 @@
         <img src="https://img.icons8.com/pastel-glyph/64/000000/cat--v2.png"/>
       </div>
 
-      <div class="titre">
+      <div id="titre">
       <h1>Les CHA'ssociés !</h1>
       </div>
 
     </div>
     <!--Navigation-->
-    <nav>
+    <nav class="container">
       <ul>
         <li><a href="index.html" target="_blank">Accueil</a></li>
         <li><a href="qui_sommes_nous.html" target="_blank">Qui sommes-nous ?</a></li>
         <li><a href="adoption.html" >Je veux adopter !</a></li>
         <li><a href="conseil.html" target="_blank">Conseils</a></li>
-        <li>Dons matériels</li>
+        <li>Faire un don</li>
         <li><a href="contact.html" target="_blank">Nous contacter</a></li>
       </ul>
     </nav>
   </header>
-  
+
+  <!--Contenu principal-->
+  <main>
+
+    <!--1er type de don-->
+    <div class="don_materiel">
+      <h2>Faire un don matériel</h2>
+      <p>
+        Nous avons besoin fréquemment de matériel :
+      </p>
+      <ul>
+        <li>Des aliments : pâtée, croquettes, friandises</li>
+        <li>Des couvertures, couettes, polaires, paniers, cages de transport, gamelles</li>
+        <li>Des colliers, laisses, jouets</li>
+        <li>Des médicaments vétérinaires : vermifuges, antiparasites...</li>
+        <li>Des médicaments autres : antiseptiques, compresses...</li>
+      </ul>
+
+      <p>
+        Pour cela, il suffit de convenir d'un RDV par <a href="mailto: chassocies@association.fr">mail</a>.
+      </p>
+    </div>
+
+    <!--2ème type de don-->
+    <div class="don_libre">
+      <h2>Faire un don libre</h2>
+      <p>
+        Les dons libres sont déductibles des impôts au delà de 20€
+      </p>
+
+      <ul>
+        <li>
+          <strong>Chèque ou mandat à envoyer à l’adresse suivante :</strong>
+          <p>
+            <mark>
+              Les CHA'associés<br/>
+              100 Petites pattes en détresse,<br/>
+              10100 CHATS HEUREUX
+            </mark>
+          </p>
+        </li>
+
+        <li>
+          <strong>Par virement : (CIC CHATS)</strong>
+            <p>
+              <mark>
+                11111 00000 11111111111 00<br/>
+                Iban : CH76 1111 0000 1111 0000 1111 000
+                BIC : CHATHEURE
+              </mark>
+            </p>
+        </li>
+
+        <li>
+          <strong>Via Paypal</strong>
+            <p>
+              <mark>
+                En cliquant sur le lien : simple, rapide et sécurisé.
+              </mark>
+            </p>
+
+            <!--Création bouton avec Bootstrap-->
+            <button type="button" class="btn btn-dark">
+              <a href="http://paypal.com" target="_blank">
+                Je fais un don via PayPal
+              </a>
+            </button>
+        </li>
+      </ul>
+    </div>
+
+    <!--Remonter en haut de la page-->
+    <a href="#titre"><img src="https://img.icons8.com/office/80/000000/double-up.png"/></a>
+  </main>
 </body>
 </html>
