@@ -1,0 +1,102 @@
+/* mise en forme sur le body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+  "Segoe UI Emoji", "Segoe UI Symbol";
+  background-image: url(image/pattes.jpg);
+}
+
+/* mise en forme sur le header*/
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+}
+
+.logo {
+  float: left;
+}
+
+.titre_logo {
+  display: flex;
+  padding: 10px;
+}
+.titre {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 110px;
+  align-items: center;
+  font-size: 14px;
+}
+
+li > a {
+  color:#8B0000;
+}
+li > a:hover {
+  color: coral;
+}
+
+.img_welcome > img {
+  border-radius: 100px;
+  width: 800px;
+  height: 650px;
+}
+
+
+/*mise en forme du contenu principal*/
+h3 {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.presentation, 
+.description {
+  display: flex;
+  padding: 10px;
+}
+
+.presentation p,
+.description p {
+  padding: 20px;
+  text-align: justify;
+}
+
+
+/*mise en forme sur le footer*/
+footer {
+  width: 100%;
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.watermark {
+  text-align: center;
+}
+
+/*mise en forme sur le logo haut de page*/
+.fleche {
+  width: 7.5%;
+  border: 2px dashed black;
