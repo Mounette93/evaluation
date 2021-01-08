@@ -37,7 +37,7 @@ nav > ul {
   flex-direction: row;
   justify-content: space-between;
 }
-ul > li {
+nav ul > li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -58,6 +58,8 @@ li > a:hover {
   width: 800px;
   height: 650px;
 }
+
+
 
 
 /*mise en forme du contenu principal*/
@@ -89,7 +91,13 @@ footer {
 footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .watermark {
