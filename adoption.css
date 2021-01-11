@@ -32,19 +32,44 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  header {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .titre_logo {
+    display: none;
+  }
+}
+
 nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-ul > li {
+
+header nav ul > li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 110px;
+  width: 130px;
   align-items: center;
   font-size: 14px;
 }
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 70px;
+  }
+}
+
 
 li > a {
   color:#8B0000;
@@ -52,6 +77,7 @@ li > a {
 li > a:hover {
   color: coral;
 }
+
 
 .img_welcome > img {
   border-radius: 100px;
@@ -87,6 +113,43 @@ h3 {
   align-items: center;
 }
 
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  .cookie,
+  .kalya,
+  .joey,
+  .luna,
+  .poupette,
+  .bounty {
+    border-radius:100px;
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: landscape), (orientation: portrait) {
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: landscape), (orientation: portrait) {
+  section {
+    padding: 0;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: landscape), (orientation: portrait) {
+  section p {
+    font-size: 8px;
+    font-style: italic;
+  }
+}
+
+
 section p {
   font-size: 14px;
   width: 25vw;
@@ -113,6 +176,7 @@ p > a:hover {
   color: coral;
 }
 
+
 /*mise en forme sur le footer*/
 footer {
   width: 100%;
@@ -126,17 +190,40 @@ footer ul {
   justify-content: space-around;
 }
 
-footer ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .watermark {
   text-align: center;
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  footer ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .watermark {
+    font-size: 10px;
+  }
 }
 
 /*mise en forme sur le logo haut de page*/
 .fleche {
   width: 7.5%;
   border: 2px dashed black;
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .fleche {
+    display: none;
+  }
+}

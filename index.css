@@ -32,20 +32,44 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  header {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .titre_logo {
+    display: none;
+  }
+}
+
 nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 ul > li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 110px;
+  width: 130px;
   align-items: center;
   font-size: 14px;
-
 }
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 70px;
+  }
+}
+
 
 li > a {
   color:#8B0000;
@@ -53,6 +77,7 @@ li > a {
 li > a:hover {
   color: coral;
 }
+
 
 .img_welcome > img {
   border-radius: 100px;
@@ -81,11 +106,34 @@ p {
   padding: 10px;
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) , (orientation: portrait) {
+  .container-fluid h2 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) , (orientation: portrait) {
+  .container-fluid p {
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) , (orientation: portrait) {
+  p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .img_welcome {
+    display: none;
+  }
+}
 
 /*mise en forme sur l'aside */
 .pub {
   width: 25%;
-  height: 800px;;
+  height: 600px;
   position: fixed;
   padding: 10px;
   right: 0;
@@ -97,9 +145,27 @@ p {
   text-align: justify;
 }
 
+.moto p {
+  font-size: 10px;
+}
 .moto > h3 {
   font-size: small;
 }
+
+@media screen and (max-width: 576px) and (orientation: landscape), (orientation: portrait) {
+  .pub {
+    width: 40%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 1100px) and (orientation: landscape), (orientation: portrait) {
+  .img_moto > img {
+    display: none;
+  }
+}
+
+
 
 .img_moto {
   display: flex;
@@ -133,8 +199,36 @@ footer ul {
   text-align: center;
 }
 
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  footer {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  footer ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .watermark {
+    font-size: 10px;
+  }
+}
+
 /*mise en forme sur le logo haut de page*/
 .fleche {
   width: 7.5%;
   border: 2px dashed black;
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .fleche {
+    display: none;
+  }
 }

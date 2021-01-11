@@ -6,6 +6,7 @@ body {
   background-image: url(image/pattes.jpg);
 }
 
+
 /* mise en forme sur le header*/
 header {
   display: flex;
@@ -32,19 +33,44 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  header {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .titre_logo {
+    display: none;
+  }
+}
+
 nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-nav ul > li {
+
+header nav ul > li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 110px;
+  width: 130px;
   align-items: center;
   font-size: 14px;
 }
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 70px;
+  }
+}
+
 
 li > a {
   color:#8B0000;
@@ -52,6 +78,7 @@ li > a {
 li > a:hover {
   color: coral;
 }
+
 
 .img_welcome > img {
   border-radius: 100px;
@@ -97,6 +124,45 @@ h4 {
 }
 
 
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape), (orientation: portrait) {
+  p {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  .accueillir ul li {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  ol ul li {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  strong {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  .pagination,
+  .page-item {
+    width: 300px;
+  }
+}
+
 /*mise en forme sur le footer*/
 footer {
   width: 100%;
@@ -110,17 +176,40 @@ footer ul {
   justify-content: space-around;
 }
 
-footer ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .watermark {
   text-align: center;
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape), (orientation: portrait) {
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  footer ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 9px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .watermark {
+    font-size: 10px;
+  }
 }
 
 /*mise en forme sur le logo haut de page*/
 .fleche {
   width: 7.5%;
   border: 2px dashed black;
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape), (orientation: portrait) {
+  .fleche {
+    display: none;
+  }
+}
